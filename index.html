@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link  rel="icon" href="favicon.ico">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+  </head>
+  <body>
+<div class="header">
+<nav class="nav">
+  <img src="img/logo.png" class="logo">
+<ul class="nav-links">
+    <li><a href="calender.html">Calender</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="teachers.html">Teachers' Bio</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="pictures.html">Pictures</a></li>
+    <li class="btn">Sign Up</li>
+
+</ul>
+</nav>
+<div class="content">
+  <h1>AL-Alamiya International School</h1>
+  <form>
+    <input type="text" placeholder="&#x270e; Enter Keyword">
+    <button type="submit">Search</button>
+  </form>
+</div>
+</div>
+<h1 class="title">Al-Alamiya Modern International School</h1>
+    <p class="text"> Al-Alamiya Modern School, the First International School in Benha, offers a broad and balanced educational approach supported by a wide range of co-curricular activities which equip all students with the skills they need in all subject areas. AMS uses American curriculum which is based on high standards of achievement. As a result, AMS students are not only accepted in all Egyptian Universities, but also by most universities around the world.
+AMS provides a dynamic, student-centered, and 21st century global goals. Our school is characterized by high achievement, engaged learners, mutual respect, shared knowledge, collaborative learning, continuous improvement, and tangible results.</p>
+
+<div class="container">
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"> <img class="school" src="img/school.jpg" alt=""></div>
+      <div class="swiper-slide"> <img class="log" src="img/logo.png" alt=""></div>
+      <div class="swiper-slide"> <img class="build" src="img/building.jpg" alt=""></div>
+
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper('.swiper', {
+  autoplay:{
+    delay:3000,
+    disableOnInteraction: false,
+  },
+loop: true,
+
+pagination: {
+  el: '.swiper-pagination',
+  clickable: true,
+},
+
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+},
+});
+</script>
+
+  </body>
+</html>
